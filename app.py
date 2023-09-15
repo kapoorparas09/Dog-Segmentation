@@ -1,8 +1,8 @@
 import os
 import sys
 
-from DogSegmentation.pipeline.training_pipeline import Trainpipeline
+from DogSegmentation.pipeline.training_pipeline import TrainPipeline
 
-obj = Trainpipeline()
+obj = TrainPipeline()
 obj.run_pipeline()
 print("Training Done!!!")
