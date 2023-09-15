@@ -1,0 +1,7 @@
+ultralytics
+from-root
+dill
+gdown
+flask
+flask-cors
+-e .
