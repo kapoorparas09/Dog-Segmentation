@@ -1,11 +1,8 @@
-from DogSegmentation.logger import logging
-from DogSegmentation.exception import AppException
+import os
 import sys
 
-logging.info("Welcome to the custom log")
+from DogSegmentation.pipeline.training_pipeline import Trainpipeline
 
-try:
-    a = 10/"6"
-
-except Exception as e:
-    raise AppException(e,sys)
+obj = Trainpipeline()
+obj.run_pipeline()
+print("Training Done!!!")
