@@ -22,7 +22,7 @@ class DataIngestion:
             os.makedirs(zip_download_dir, exist_ok=True)
             data_file_name = "data.zip"
             zip_file_path = os.path.join(zip_download_dir, data_file_name)
-            logging.info("Downloading data from {dataset_url} into file {zip_file_path}")
+            logging.info(f"Downloading data from {dataset_url} into file {zip_file_path}")
 
             file_id = dataset_url.split('/')[-2]
             prefix = 'https://drive.google.com/uc?/export=download&id='

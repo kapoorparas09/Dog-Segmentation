@@ -20,6 +20,6 @@ MODEL_TRAINER_DIR_NAME: str = "model_trainer"
 
 MODEL_TRAINER_PRETRAINED_WEIGHT_NAME: str = "yolov8s-seg.pt"
 
-MODEL_TRAINER_NO_EPOCHS: int = 1
+MODEL_TRAINER_NO_EPOCHS: int = 10
 
 # MODEL_TRAINER_BATCH_SIZE: int = 16  # Yolov8 has predefined batch size.
