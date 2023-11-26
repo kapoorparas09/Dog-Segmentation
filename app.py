@@ -15,20 +15,15 @@ class ClientApp:
     def __init__(self):
         self.filename = "inputImage.jpg"
 
-
-
 @app.route("/train")
 def trainRoute():
     obj = TrainPipeline()
     obj.run_pipeline()
     return "Training Successfull!!" 
 
-
 @app.route("/")
 def home():
     return render_template("index.html")
-
-
 
 
 @app.route("/predict", methods=['POST','GET'])
